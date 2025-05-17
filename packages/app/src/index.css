@@ -1,1 +1,63 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+
+  --color-*: initial;
+
+  --color-safety-red: #cf2f38;
+  --color-safety-orange: #e28128;
+  --color-safety-green: #41d24f;
+  --color-safety-blue: #3e4cc5;
+
+  --color-notif-danger: #cf5d5d;
+  --color-notif-warn: #cfaf5d;
+  --color-notif-ok: #5dcf98;
+  --color-notif-info: #535e7b;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-mono--1: #0d0f13;
+  --color-mono-0: #12141b;
+  --color-mono-1: #1b1d27;
+  --color-mono-2: #242834;
+  --color-mono-3: #292d39;
+  --color-mono-4: #2f3444;
+  --color-mono-5: #434a5f;
+  --color-mono-6: #636ab1;
+  --color-mono-7: #888ea0;
+
+  --color-cloud-0: #1f2430;
+  --color-cloud-1: #27324e;
+  --color-cloud-2: #455a8f;
+  --color-cloud-3: #5a6e9f;
+  --color-cloud-4: #8194c3;
+  --color-cloud-5: #a9b9e0;
+  --color-cloud-6: #cbd6ef;
+
+  --color-sky-0: #19263a;
+  --color-sky-1: #34517d;
+  --color-sky-2: #4372ba;
+  --color-sky-3: #4f8eee;
+  --color-sky-4: #599aff;
+  --color-sky-5: #94beff;
+  --color-sky-6: #b6d2ff;
+
+  --color-scarlet-0: #2c1118;
+  --color-scarlet-1: #491925;
+  --color-scarlet-2: #79263a;
+  --color-scarlet-3: #8f414f;
+  --color-scarlet-4: #bd6978;
+  --color-scarlet-5: #ea98a7;
+  --color-scarlet-6: #ffc0cc;
+
+  /* holy shit https://www.youtube.com/watch?v=eoJyskz0TxU */
+  --color-camellia-0: #2c181d;
+  --color-camellia-1: #48272f;
+  --color-camellia-2: #774350;
+  --color-camellia-3: #b55c71;
+  --color-camellia-4: #ea6e8c;
+  --color-camellia-5: #ff92ac;
+  --color-camellia-6: #ffa1b8;
+}
