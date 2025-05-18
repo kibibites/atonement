@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+a {
+  @apply hover:underline text-sky-3;
+}
+
+.glow {
+  box-shadow: -100px 100px 136px 61px #5a6e9f4b, 100px -100px 136px 61px #cf5d5d4b;
+}
+
 @theme {
   --font-sans: "Inter", sans-serif;
 
