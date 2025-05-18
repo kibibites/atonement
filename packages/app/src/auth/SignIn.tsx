@@ -18,9 +18,9 @@ const SignIn: Component = () => (
         <Button role='primary' class="mt-4 w-full">Sign In</Button>
         <Button class="mt-4 w-full">Troubleshooting</Button>
       </form>
-      <aside class="mt-8 border border-mono-1 rounded-lg px-6 py-4 bg-mono-0 flex items-center justify-between">
+      <aside class="mt-8 border border-mono-2 rounded-lg px-6 py-4 bg-mono-1 flex items-center justify-between">
         <span class="flex items-center gap-x-4"><IconSparkles class="text-[#ff5caa]" /><span>New to Sparrow?</span></span>
-        <Button>Sign Up</Button>
+        <Button role="primary">Sign Up</Button>
       </aside>
     </main>
     <footer>
