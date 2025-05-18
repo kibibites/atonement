@@ -6,6 +6,7 @@ import Home from './Home.tsx';
 import RootLayout from './_layout.tsx';
 import SignIn from './auth/SignIn.tsx';
 import SignUp from './auth/SignUp.tsx';
+import Onboarding from './auth/Onboarding.tsx';
 
 const root = document.getElementById('root');
 
@@ -13,4 +14,5 @@ render(() => <Router root={RootLayout}>
   <Route path="/" component={Home} />
   <Route path="/signin" component={SignIn} />
   <Route path="/signup" component={SignUp} />
+  <Route path="/onboarding" component={Onboarding} />
 </Router>, root!);
