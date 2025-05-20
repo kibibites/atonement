@@ -1,21 +1,21 @@
 {
   "name": "server",
+  "type": "module",
   "packageManager": "yarn@4.6.0",
   "dependencies": {
-    "@koa/cors": "^5.0.0",
-    "koa": "^3.0.0",
-    "koa-pino-logger": "^4.0.0",
+    "hono": "^4.7.10",
     "supertokens-node": "^22.1.0"
   },
   "devDependencies": {
-    "@types/koa": "^2.15.0",
-    "@types/koa-pino-logger": "^3.0.4",
+    "@types/minimist": "^1",
     "esbuild": "^0.25.4",
+    "minimist": "^1.2.8",
     "pino-pretty": "^13.0.0",
     "typescript": "^5.8.3"
   },
   "scripts": {
-    "build": "esbuild --bundle --sourcemap --outdir=dist --platform=node --target=node23 src/index.ts",
+    "build": "node build.js",
+    "dev": "node build.js --mode=watch",
     "check": "tsc",
     "start": "node --enable-source-maps dist/index.js | yarn pino-pretty"
   }
