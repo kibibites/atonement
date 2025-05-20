@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "packageManager": "yarn@4.6.0",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "koa": "^3.0.0",
+    "koa-pino-logger": "^4.0.0",
+    "supertokens-node": "^22.1.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "@types/koa-pino-logger": "^3.0.4",
+    "esbuild": "^0.25.4",
+    "pino-pretty": "^13.0.0",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "esbuild --bundle --sourcemap --outdir=dist --platform=node --target=node23 src/index.ts",
+    "check": "tsc",
+    "start": "node --enable-source-maps dist/index.js | yarn pino-pretty"
+  }
+}
