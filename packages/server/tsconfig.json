@@ -4,9 +4,9 @@
     "lib": [
       "ESNext"
     ],
-    "module": "ESNext",
+    "module": "NodeNext",
     "skipLibCheck": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "nodenext",
     "strict": true,
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
@@ -20,10 +20,12 @@
     "noUnusedParameters": true,
     "verbatimModuleSyntax": true,
     "esModuleInterop": true,
-    "noEmit": true
+    "inlineSourceMap": true,
+    "rootDir": "src",
+    "outDir": "dist",
   },
   "include": [
-    "./src/**/*.ts",
-    "./drizzle.config.ts"
+    "./src/**/*.ts"
+    // "./drizzle.config.ts"
   ]
 }
