@@ -7,9 +7,9 @@ const ctx = await esbuild.context({
   entryPoints: ['src/index.ts'],
   bundle: true,
   outdir: 'dist',
-  sourcemap: args['env'] !== 'production',
+  sourcemap: (args['env'] || process.env['NODE_ENV']) !== 'production',
   format: 'esm',
-  minify: args['env'] === 'production',
+  minify: (args['env'] || process.env['NODE_ENV']) === 'production',
   logLevel: 'info',
 });
 

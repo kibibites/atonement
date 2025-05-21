@@ -1,11 +1,8 @@
-import Koa from 'koa';
-import pino from 'koa-pino-logger';
+import { Hono } from 'hono';
+import { cors } from "hono/cors";
 
-const app = new Koa();
-app.use(pino());
+const app = new Hono();
 
-app.use(async ctx => {
-  ctx.body = 'Hello World';
-});
+app.get('/', (c) => c.json({ success: true }));
 
-app.listen(3000);
+app.fire();
