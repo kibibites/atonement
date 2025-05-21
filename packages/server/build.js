@@ -6,9 +6,11 @@ const args = minimist(process.argv.slice(2));
 const ctx = await esbuild.context({
   entryPoints: ['src/index.ts'],
   bundle: true,
-  outdir: 'dist',
-  sourcemap: (args['env'] || process.env['NODE_ENV']) !== 'production',
+  outfile: 'dist.js',
+  sourcemap: (args['env'] || process.env['NODE_ENV']) !== 'production' ? 'inline' : false,
   format: 'esm',
+  platform: 'node',
+  target: 'node23',
   minify: (args['env'] || process.env['NODE_ENV']) === 'production',
   logLevel: 'info',
 });
