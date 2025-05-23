@@ -3,7 +3,6 @@
   "type": "module",
   "packageManager": "yarn@4.6.0",
   "dependencies": {
-    "@hono/node-server": "^1.14.2",
     "better-auth": "^1.2.8",
     "drizzle-orm": "^0.43.1",
     "hono": "^4.7.10",
@@ -13,14 +12,15 @@
     "@better-auth/cli": "^1.2.8",
     "@types/node": "^22.15.20",
     "drizzle-kit": "^0.31.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "wrangler": "^4.16.1"
   },
   "scripts": {
-    "build": "tsc",
-    "check": "tsc --noEmit",
-    "start": "node --enable-source-maps dist/index.js",
+    "check": "tsc",
+    "dev": "wrangler dev",
+    "generate:types": "wrangler types",
     "generate:auth": "cli generate",
-    "generate": "drizzle-kit generate",
+    "generate:sql": "drizzle-kit generate",
     "migrate": "drizzle-kit migrate"
   }
 }

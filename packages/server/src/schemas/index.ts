@@ -1,1 +1,1 @@
-export { user, session, account, verification } from './auth-schema.js';
+export { user, session, account, verification } from './auth-schema';

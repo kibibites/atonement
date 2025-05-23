@@ -1,9 +1,9 @@
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
-import db from './db.js';
-import * as schema from './schemas/index.js';
+import db from './db';
+import * as schema from './schemas/index';
 
-const auth = betterAuth({
+export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: 'pg',
     schema,
@@ -12,5 +12,3 @@ const auth = betterAuth({
     enabled: true
   }
 });
-
-export default auth;

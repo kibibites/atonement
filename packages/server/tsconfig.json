@@ -4,9 +4,9 @@
     "lib": [
       "ESNext"
     ],
-    "module": "NodeNext",
+    "module": "ESNext",
     "skipLibCheck": true,
-    "moduleResolution": "nodenext",
+    "moduleResolution": "bundler",
     "strict": true,
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
@@ -21,8 +21,7 @@
     "verbatimModuleSyntax": true,
     "esModuleInterop": true,
     "inlineSourceMap": true,
-    "rootDir": "src",
-    "outDir": "dist",
+    "noEmit": true
   },
   "include": [
     "./src/**/*.ts"
