@@ -1,4 +1,12 @@
 {
+  "$schema": "https://unpkg.com/wrangler@4.16.1/config-schema.json",
   "name": "sparrow-server",
-  "compatibility_date": "2025-05-22"
+  "compatibility_date": "2025-05-22",
+  "hyperdrive": [
+    {
+      "binding": "hyperdrive",
+      "id": "57b7076f58be42419276f058a8968187",
+      "localConnectionString": "postgresql://postgres:postgres@localhost:5432/atonement?sslmode=disable"
+    }
+  ]
 }

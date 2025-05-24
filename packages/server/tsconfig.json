@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
+    "types": [
+      "./worker-configuration.d.ts"
+    ],
     "target": "ESNext",
     "lib": [
-      "ESNext"
+      "ESNext",
+      "Webworker"
     ],
     "module": "ESNext",
     "skipLibCheck": true,
