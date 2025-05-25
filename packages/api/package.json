@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "private": true,
+  "type": "module",
+  "packageManager": "yarn@4.6.0",
+  "dependencies": {
+    "cloudevents": "^9.0.0",
+    "hono": "^4.7.10"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.4",
+    "typescript": "^5.8.3",
+    "workerd": "^1.20250525.0"
+  },
+  "scripts": {
+    "build": "yarn tsc && yarn esbuild --bundle --outdir=dist --sourcemap=inline --format=esm src/index.ts",
+    "start": "wasmer run wasmer/winterjs --forward-host-env --net --mapdir=dist:dist -- serve --mode cloudflare dist/index.js"
+  }
+}
