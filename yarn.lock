@@ -1965,6 +1965,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"auth@workspace:packages/auth":
+  version: 0.0.0-use.local
+  resolution: "auth@workspace:packages/auth"
+  dependencies:
+    hono: "npm:^4.7.10"
+    typescript: "npm:^5.8.3"
+    wrangler: "npm:^4.16.1"
+  languageName: unknown
+  linkType: soft
+
 "babel-plugin-jsx-dom-expressions@npm:^0.39.8":
   version: 0.39.8
   resolution: "babel-plugin-jsx-dom-expressions@npm:0.39.8"
