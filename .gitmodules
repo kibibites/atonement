@@ -1,0 +1,3 @@
+[submodule "contrib/dev/docker-postgresql-multiple-databases"]
+	path = contrib/dev/docker-postgresql-multiple-databases
+	url = https://github.com/mrts/docker-postgresql-multiple-databases
