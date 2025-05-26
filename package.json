@@ -1,5 +1,5 @@
 {
-  "name": "atonement",
+  "name": "sparrow",
   "packageManager": "yarn@4.6.0",
   "workspaces": [
     "packages/*"
