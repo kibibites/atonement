@@ -1,7 +1,9 @@
-import { Hono } from 'hono';
+import Koa from 'koa';
+import pino from 'koa-pino-logger';
+import router from './routes/index.js';
 
-const app = new Hono();
+const app = new Koa();
+app.use(pino());
+app.use(router);
 
-app.get('/', (c) => c.json({ success: true }));
-
-export default app;
+app.listen(process.env['PORT'] || 8080);

@@ -2,12 +2,11 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": [
-      "ESNext",
-      "Webworker"
+      "ESNext"
     ],
-    "module": "ESNext",
+    "module": "NodeNext",
     "skipLibCheck": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "nodenext",
     "strict": true,
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
@@ -21,8 +20,9 @@
     "noUnusedParameters": true,
     "verbatimModuleSyntax": true,
     "esModuleInterop": true,
-    "inlineSourceMap": true,
-    "noEmit": true
+    "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "dist"
   },
   "include": [
     "./src/**/*.ts",
