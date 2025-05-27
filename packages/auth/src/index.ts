@@ -1,6 +1,6 @@
 import { HTTP, type CloudEventV1 } from 'cloudevents';
 import { Hono } from 'hono';
-import eventHandlers from './events';
+import eventHandlers from './events/index.js';
 
 const app = new Hono<{ Bindings: Env; }>();
 

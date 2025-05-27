@@ -1,16 +1,23 @@
 {
   "name": "@sparrow/auth",
+  "private": true,
+  "type": "module",
+  "exports": "./dist/index.js",
+  "engines": {
+    "node": ">=23"
+  },
   "packageManager": "yarn@4.6.0",
-  "devDependencies": {
-    "typescript": "^5.8.3",
-    "wrangler": "^4.16.1"
-  },
-  "scripts": {
-    "dev": "wrangler dev",
-    "generate:types": "wrangler types"
-  },
   "dependencies": {
     "cloudevents": "^9.0.0",
     "hono": "^4.7.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc",
+    "start": "node --enable-source-maps dist/index.js"
   }
 }
