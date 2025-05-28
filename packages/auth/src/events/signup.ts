@@ -1,4 +1,4 @@
-import type { EventHandler } from '.';
+import type { EventHandler } from './index.js';
 
 interface SignupEventBody {
 }

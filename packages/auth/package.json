@@ -9,7 +9,8 @@
   "packageManager": "yarn@4.6.0",
   "dependencies": {
     "cloudevents": "^9.0.0",
-    "hono": "^4.7.10"
+    "dotenv": "^16.5.0",
+    "nats": "^2.29.3"
   },
   "devDependencies": {
     "@types/node": "^22.15.21",

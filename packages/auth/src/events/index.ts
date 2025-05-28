@@ -1,6 +1,6 @@
 import type { CloudEventV1 } from 'cloudevents';
 
-import signup from './signup';
+import signup from './signup.js';
 
 interface EventHandler<T> {
   type: string;
